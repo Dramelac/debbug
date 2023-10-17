@@ -1,6 +1,6 @@
 FROM debian
 
 RUN apt-get update && \
-	apt-get install -y htop vim net-tools dnsutils tcpdump netcat wget curl less procps && \
+	apt-get install -y htop vim net-tools dnsutils tcpdump netcat-traditional wget curl less procps iputils-ping traceroute iproute2 && \
 	apt-get clean
 
